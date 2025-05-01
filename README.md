@@ -7,12 +7,13 @@ API REST para gerenciamento de animais, desenvolvida com Node.js, Fastify e Pris
 - Node.js
 - Fastify
 - Prisma
-- SQLite
+- PostgreSQL
 
 ## 📋 Pré-requisitos
 
 - Node.js (versão 18 ou superior)
 - npm ou yarn
+- PostgreSQL (versão 14 ou superior)
 
 ## 🔧 Instalação
 
@@ -29,9 +30,15 @@ yarn install
 ```
 
 3. Configure o banco de dados:
-```bash
-npx prisma migrate dev --schema=src/db/schema.prisma
-```
+   - Crie um banco de dados PostgreSQL
+   - Configure as variáveis de ambiente no arquivo `.env`:
+     ```
+     DATABASE_URL="postgresql://usuario:senha@localhost:5432/nome_do_banco"
+     ```
+   - Execute as migrações:
+     ```bash
+     npx prisma migrate dev --schema=src/db/schema.prisma
+     ```
 
 4. Inicie o servidor:
 ```bash
