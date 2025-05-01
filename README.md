@@ -18,7 +18,7 @@ API REST para gerenciamento de animais, desenvolvida com Node.js, Fastify e Pris
 
 1. Clone o repositório:
 ```bash
-git clone [https://github.com/Cristhian-Appi/backend-animals-crud/edit/main/README.md]
+git clone https://github.com/Cristhian-Appi/backend-animals-crud/edit/main/README.md
 ```
 
 2. Instale as dependências:
